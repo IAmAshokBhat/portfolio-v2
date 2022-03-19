@@ -15,13 +15,10 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NVBRM5N');</script>
+    })(window,document,'script','dataLayer','GTM-NVBRM5N');</script> 
     <!-- End Google Tag Manager -->
 </head>
 <body >
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVBRM5N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->      
     <section class="about-me">
         <div>
             <div class="avatar"><img src="./images/avatar.webp" width="250" height="250" alt="Ashok Bhat - Web developer" aria-label="Ashok Bhat - Web developer"/></div>
@@ -34,7 +31,7 @@
         </div>
         <div class="contact-me">
             <a href="mailto:ashokbhatz@gmail.com"><img src="./images/gmail.svg" alt="GMail" width="30" height="30" aria-label="GMail"/></a>
-            <a href="#"><img src="./images/mobile.svg" alt="mobile" width="30" height="30" aria-label="mobile"/></a>
+            <a href="#" class="mobile" onclick="copyNumber()"><img src="./images/mobile.svg" alt="mobile" width="30" height="30" aria-label="mobile"/><span class="tooltip" onclick="copyNumber()">+918105973873 <i>Click to copy</i></span></a>
             <a href="https://github.com/IAmAshokBhat"><img src="./images/github.svg" alt="Github" width="30" height="30" aria-label="Github"/></a>
             <a href="https://www.linkedin.com/in/iamashokbhat/"><img src="./images/linkedin.svg" alt="LinkedIn" width="30" height="30" aria-label="LinkedIn"/></a>
                   
@@ -112,13 +109,13 @@
             <span class="period">MARCH 2016 - APRIL 2018</span>
             <ul>
                 <li>Created and assisted in design and development of responsive
-                    Website for Video streaming, technologies used was <i>HTML</i>, <i>Symfony</i>, <i>Twig</i>, <i>Bootstrap</i>, <i>jQuery</i>, <i>JavaScript</i></li>
+                    website for Video streaming. Technologies used was <i>HTML</i>, <i>Symfony</i>, <i>Twig</i>, <i>Bootstrap</i>, <i>jQuery</i>, <i>JavaScript</i></li>
                 <li>Lead and mentored junior team members in multiple projects.</li>
                 <li>Developed and oversaw development of Contractor management
                     System, which was a dashboard for all the surveys and inspections
-                    conducted by contractors technologies used was <i>HTML</i>, <i>Angular JS</i>, <i>Bootstrap</i>, <i>jQuery</i>, <i>JavaScript</i>, <i>Google Maps API</i></li>
+                    conducted by contractors. Technologies used was <i>HTML</i>, <i>Angular JS</i>, <i>Bootstrap</i>, <i>jQuery</i>, <i>JavaScript</i>, <i>Google Maps API</i></li>
                 <li>Created and assisted in design and development of responsive
-                    cockpits for Paypal&trade;. The cockpit was for a ticketing system, whereusers could raise tickets and it is assigned to respective teams and
+                    cockpits for Paypal&trade;. The cockpit was for a ticketing system, where users could raise tickets and it is assigned to respective teams and
                     escalated based on time it spends in the queue. The admin gets a birds
                     eye view of all the tickets, based on severity, geo location and so on.
                     Technologies used was <i>HTML</i>, <i>Angular 2.0</i>, <i>Bootstrap</i>, <i>JavaScript</i>, <i>D3.js</i></li>
@@ -145,14 +142,29 @@
             websites for an eye care product (Alcon). Technologies used was <i>HTML</i>, <i> Bootstrap</i>, <i> JavaScript</i>,<i>CSS</i>, <i>SASS</i> </p>
         </div>
     </section>
+    <div class="notification" id="notification">
+        <h5>Number copied!</h5>
+    </div>
 <footer>
     <div class="contact-me">
         <a href="mailto:ashokbhatz@gmail.com"><img src="./images/gmail.svg" alt="GMail" width="30" height="30" aria-label="GMail"/></a>
-        <a href="#"><img src="./images/mobile.svg" alt="mobile" width="30" height="30" aria-label="mobile"/></a>
+        <a href="#" class="mobile"  onclick="copyNumber()"><img src="./images/mobile.svg" alt="mobile" width="30" height="30" aria-label="mobile"/><span class="tooltip" onclick="copyNumber()">+918105973873<i>Click to copy</i></span></a>
         <a href="https://github.com/IAmAshokBhat"><img src="./images/github.svg" alt="Github" width="30" height="30" aria-label="Github"/></a>
         <a href="https://www.linkedin.com/in/iamashokbhat/"><img src="./images/linkedin.svg" alt="LinkedIn" width="30" height="30" aria-label="LinkedIn"/></a>
               
     </div>
+    <script>
+        function copyNumber(){
+            navigator.clipboard.writeText('8105973873');
+            document.getElementById("notification").style.display = "block"
+            setTimeout(()=>{
+                document.getElementById("notification").style.display = "none"
+            },3000)
+        }
+    </script>
+     <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVBRM5N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <!-- End Google Tag Manager (noscript) -->     
 </footer>
 </body>
 </html>
