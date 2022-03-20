@@ -1,7 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  margin-bottom: 100px;
 }
 
 .light body {
@@ -11,6 +10,7 @@ body {
       rgba(255, 255, 255, 0.5)
     ),
     url(./images/cube-bg.webp);
+  color: #000000;
 }
 
 .dark body {
@@ -20,6 +20,7 @@ body {
       rgba(0, 0, 0, 0.5)
     ),
     url(./images/cube-bg.webp);
+  color: #a3a3a3;
 }
 
 h1 {
@@ -96,6 +97,7 @@ hr {
 
 .contact-me {
   text-align: center;
+  cursor: pointer;
 }
 
 .designation {
@@ -174,13 +176,14 @@ footer .tooltip {
 .notification h5 {
   margin: 0;
 }
+
 footer {
   background: rgb(220 215 215 / 76%);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   padding: 10px;
-  left: 0;
+}
+
+.experience {
+  margin-bottom: 50px;
 }
 /* large screen styles*/
 
